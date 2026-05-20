@@ -20,6 +20,103 @@ UniMatch is a **centralized decision-support and application coordination platfo
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- **Python 3.11+** - For running the service layer and API
+- **Git** - For version control
+- **GitHub account** - For contributing
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mabotse-Mosima/UniMatch-University-Application-System.git
+   cd UniMatch-University-Application-System
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # For Assignment 12 (Service Layer & API)
+   cd ASSIGNMENT_12
+   python -m pip install -r requirements.txt
+   
+   # For Assignment 10 (Domain Model & Patterns)
+   python -m pip install -r requirements.txt
+   ```
+
+3. **Run tests**
+   ```bash
+   # Assignment 12 tests
+   cd ASSIGNMENT_12
+   python -m pytest tests/ -v
+   
+   # Assignment 10 tests
+   python -m pytest --cov=unimatch --cov=creational_patterns --cov-report=term-missing
+   ```
+
+4. **Run the API (Assignment 12)**
+   ```bash
+   cd ASSIGNMENT_12
+   uvicorn api:app --reload
+   ```
+   API available at: http://localhost:8000/docs
+
+### Quick Start for Contributors
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Make changes and test
+4. Submit a pull request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+---
+
+## Features for Contribution
+
+We welcome contributions in the following areas. These are great starting points for new contributors:
+
+### Good First Issues (Beginner-Friendly)
+
+| Feature | Description | Difficulty | Labels |
+|---------|-------------|------------|--------|
+| Add unit tests for existing functions | Improve test coverage for service layer | Easy | `good-first-issue`, `testing` |
+| Improve documentation and code comments | Add docstrings and inline comments | Easy | `good-first-issue`, `documentation` |
+| Fix minor UI bugs | Small UI fixes and improvements | Easy | `good-first-issue`, `bug` |
+| Add error handling | Implement try-catch blocks and validation | Easy | `good-first-issue` |
+| Add logging statements | Add logging for debugging and monitoring | Easy | `good-first-issue` |
+| Update README with examples | Add usage examples and tutorials | Easy | `good-first-issue`, `documentation` |
+| Create Docker configuration | Add Dockerfile and docker-compose.yml | Easy | `good-first-issue`, `infrastructure` |
+| Add API documentation examples | Expand OpenAPI documentation | Easy | `good-first-issue`, `documentation` |
+
+### Feature Requests (Intermediate/Advanced)
+
+| Feature | Description | Difficulty | Labels |
+|---------|-------------|------------|--------|
+| Implement caching layer | Add Redis for session and query caching | Medium | `feature-request`, `performance` |
+| Build mobile applications | iOS and Android apps for learners | Hard | `feature-request`, `mobile` |
+| Integrate payment gateway | Secure payment processing integration | Medium | `feature-request`, `integration` |
+| Develop analytics dashboard | Real-time dashboards and reporting | Medium | `feature-request` |
+| Create recommendation engine | ML-based programme recommendations | Hard | `feature-request`, `ai-ml` |
+| Build notification system | Email, SMS, and in-app notifications | Medium | `feature-request` |
+| Implement real-time features | WebSocket support for live updates | Medium | `feature-request` |
+| Add machine learning capabilities | Predictive analytics and AI features | Hard | `feature-request`, `ai-ml` |
+
+### How to Contribute
+
+1. **Pick an issue**: Browse issues labeled `good-first-issue` or `feature-request`
+2. **Comment to claim**: Add a comment to avoid duplicate work
+3. **Create a branch**: `git checkout -b feature/your-feature-name`
+4. **Make changes**: Follow coding standards in CONTRIBUTING.md
+5. **Test thoroughly**: Ensure all tests pass
+6. **Submit PR**: Create a pull request with clear description
+
+See [ROADMAP.md](ROADMAP.md) for the complete project roadmap and future plans.
+
+---
+
 ## Assignment Progress
 
 ### Assignment 3: System Specification & Architecture
@@ -250,3 +347,31 @@ See [PROTECTION.md](PROTECTION.md) for detailed explanation of branch protection
 ![CI/CD Pipeline - Generated Artifact](screenshot/Artifact%20screenshot%20(1).png)
 
 ![CI/CD Pipeline - Artifact Details](screenshot/Artifact%20screenshot%20(2).png)
+
+---
+
+## Assignment 14: Open-Source Collaboration
+
+This repository has been prepared for open-source contribution as part of Assignment 14.
+
+### Collaboration Files
+
+| File | Purpose |
+|------|---------|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Setup instructions, coding standards, PR process |
+| [ROADMAP.md](ROADMAP.md) | Future features and project vision |
+| [LICENSE](LICENSE) | MIT License — free to use and fork |
+| [VOTING_RESULTS.md](VOTING_RESULTS.md) | Peer engagement tracking (stars, forks, feedback) |
+| [REFLECTION.md](REFLECTION.md) | 770-word reflection on open-source collaboration |
+
+### Issue Labels
+
+Issues in this repository are tagged to help contributors find suitable work:
+
+- `good-first-issue` — 5+ issues suitable for newcomers (add tests, improve docs, add error handling, add logging, create Docker config)
+- `feature-request` — 3+ issues for desired enhancements (Redis caching, payment gateway, notification system)
+- `bug` — Known bugs to fix
+- `documentation` — Documentation improvements
+
+**Browse open issues:** https://github.com/Mabotse-Mosima/UniMatch-University-Application-System/issues
+
